@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date: 10.12.2025
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -31,9 +31,105 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Cover</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="book-cover">
+        <div class="content">
+            <h1>The Biography of DRAGON</h1>
+            <p class="tagline">Unleash the power within yourself</p>
+
+            <span>By S AADITHYAN
+                (25015010)
+            </span>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+}
+
+
+.book-cover {
+    width: 400px;
+    height: 600px;
+
+    background-image: url("imagecover.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    border-radius: 12px;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.7),
+        inset 0 0 0 1px rgba(221, 216, 216, 0.13);
+    overflow: hidden;
+}
+
+
+.content {
+    position: relative;
+    height: 100%;
+    padding: 36px 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #ffffff;
+}
+
+.content h1 {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+.tagline {
+    font-size: 20px;
+    font-style: italic;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 12px 0 25px;
+    text-align: top;
+}
+
+.content span {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+```
 
 
 ## OUTPUT:
+![alt text](<Screenshot 2025-12-30 140430.png>)
 
 
 ## RESULT:
